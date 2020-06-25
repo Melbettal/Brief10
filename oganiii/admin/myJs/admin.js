@@ -89,8 +89,8 @@ function editSwitch(btn, type, index, prodId) {
     if (newState == 'false') {
         btn.setAttribute('class', 'fa fa-check');
         newState = 'true';
-        element.style.outlineStyle = "auto";
-    } else {
+        element.style = "outline-style : auto !important";
+ } else {
         btn.setAttribute('class', 'fa fa-edit');
         newState = 'false';
         element.style.outlineStyle = "initial";
